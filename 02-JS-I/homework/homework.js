@@ -3,6 +3,8 @@
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = 'Hola Henry Soy Martin Arrayago';
 
+const nuevString2 = 'Prep-Course';
+
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 2;
 
@@ -18,6 +20,8 @@ const nuevaMultiplicacion = 10 * 4 === 40 ;
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
 
+var x = 25;
+var y = 73;
 
 // En los próximos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
@@ -36,8 +40,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var x = 25;
-  var y = 73;
+
   const resultado1 = x + y;
   console.log(resultado1);
  
@@ -46,8 +49,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var x = 25;
-  var y = 73;
+  
   const resultado2 = x - y;
   console.log(resultado2);
   
@@ -56,8 +58,7 @@ function resta(x, y) {
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  var x = 25;
-  var y = 73;
+  
   const resultado3 = x * y;
   console.log(resultado3);
 }
@@ -65,6 +66,9 @@ function multiplica(x, y) {
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
+ 
+  const resultado4 = x % y;
+  console.log(resultado4);
   
 }
 
@@ -72,8 +76,12 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  
-}
+ if (x == y){
+   return true;
+ }
+     return false;  
+ }
+
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
