@@ -19,8 +19,6 @@ const nuevaMultiplicacion = 10 * 4 === 40 ;
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
 
-var x = 25;
-var y = 73;
 
 // En los próximos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
@@ -130,52 +128,41 @@ return false;
 }
 
 function esImpar(num) {
-  // Devuelve "true" si "num" es impar
-  // De lo contrario, devuelve "false"
-  // Tu código:
-  if (num %2 == 0){
+  if (num%2 == 0){
     return false;
   }
   return true;
   
 }
 
-function elevarAlCuadrado(num) {
-  // Devuelve el valor de "num" elevado al cuadrado
-  // ojo: No es raiz cuadrada!
-  // Tu código:
-
-  
+function elevarAlCuadrado(num) { 
+  let Number = Math.pow(num,2);
+console.log("El Numero= ",num, ' Al Cuadrado es =', Number);
 }
 
-function elevarAlCubo(num) {
-  // Devuelve el valor de "num" elevado al cubo
-  // Tu código:
-  
+function elevarAlCubo(num) { 
+  let IOT = Math.pow(num,3);
+console.log("El Numero= ",num, ' Al Cuadrado es =', IOT);
 }
 
-function elevar(num, exponent) {
-  // Devuelve el valor de "num" elevado al exponente dado en "exponent"
-  // Tu código:
-  
+function elevar(num, expo) { 
+  let boomer = Math.pow(num,expo);
+console.log("El Numero= ",num, ' Al Cuadrado es =', boomer);
 }
 
-function redondearNumero(num) {
-  // Redondea "num" al entero más próximo y devuélvelo
-  // Tu código:
-  
+function redondearNumero(num) { 
+  let passd = Math.round(num);
+console.log("El Numero es= ",num, ' el proximo es=', passd);
 }
 
 function redondearHaciaArriba(num) {
-  // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código:
+  let p = Math.ceil(num);
+console.log("El Numero es= ",num, ' el proximo es=', p);
   
 }
 
 function numeroRandom() {
-  //Generar un número al azar entre 0 y 1 y devolverlo
-  //Pista: investigá qué hace el método Math.random()
-  
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -183,20 +170,26 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  if (numero > 0){
+    console.log('El Numero es positivo');
+  }
+  if (numero < 0){
+    console.log('El Numero en negativo');
+  }
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  return str + "!";
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  return nombre + apellido;
 }
 
 function obtenerSaludo(nombre) {
